@@ -1,0 +1,90 @@
+write prompts which for use in RunwayML in order to generate images to be used as t-shirt designs
+
+Nature and Animals
+"A majestic wolf howling at a glowing, neon crescent moon in a starry sky, surrounded by aurora borealis effects, high contrast and detailed."
+"A vibrant tropical jungle scene with colorful parrots, lush greenery, and cascading waterfalls, designed in a bold, illustrative style."
+"An artistic mandala made from intricate floral and leaf patterns in a gradient of warm sunset colors."
+Abstract and Geometric
+"An abstract geometric design with interlocking shapes and lines, vibrant neon colors on a black background, futuristic and symmetrical."
+"A mesmerizing spiral galaxy with glowing fractal patterns, rendered in high detail and vivid hues of purple, blue, and gold."
+"A minimalist line art design featuring concentric circles and triangles in bold black, white, and red tones."
+Pop Culture and Fun
+"A retro-style cassette tape with neon colors, vaporwave aesthetics, and a glowing grid background, inspired by 1980s design."
+"A humorous cartoon-style alien holding a surfboard, standing on a beach under a double sunset, playful and colorful."
+"A pixel-art style gaming controller surrounded by glowing 8-bit hearts, coins, and stars, perfect for gamers."
+Fantasy and Mythology
+"A dragon wrapped around a glowing crystal orb, surrounded by flames and sparks, rendered in intricate detail with a mystical aura."
+"A mystical phoenix rising from glowing embers, its feathers transitioning through fiery shades of red, orange, and gold."
+"A magical forest scene with a glowing fairy hovering over a sparkling stream, ethereal and enchanting."
+Typography and Quotes
+"Bold graffiti-style text spelling out 'Dream Big' with splashes of bright paint and a spray can in the corner, vibrant and dynamic."
+"A retro-inspired text design that says 'Stay Wild' with a vintage sunburst pattern and palm tree silhouettes in the background."
+"Hand-drawn cursive text 'Adventure Awaits' surrounded by whimsical doodles of mountains, trees, and a compass."
+Sci-Fi and Tech
+"A futuristic cityscape with glowing skyscrapers, flying cars, and holographic billboards, viewed from above, cyberpunk style."
+"A sleek robotic hand holding a glowing neon orb, surrounded by digital code effects, highly detailed and futuristic."
+"A space exploration scene with astronauts floating near a massive glowing planet, accented by shooting stars and nebula clouds."
+Seasonal and Festive
+"A playful Halloween-themed design with a grinning pumpkin, bats, and a glowing moon in an eerie yet colorful cartoon style."
+"A winter wonderland scene with a snowman, pine trees, and snowflakes falling gently, drawn in a cheerful and cozy illustration style."
+"A summer-themed design with a sun wearing sunglasses, palm trees, and colorful waves, vibrant and fun."
+Artistic and Creative
+"A surreal melting clock inspired by Salvador Dalí's style, with colorful drips blending into a vibrant background."
+"A watercolor-style galaxy blending deep blues, purples, and pinks, with splashes of white stars scattered across the design."
+"A monochromatic ink illustration of a roaring lion's face, with intricate tribal patterns filling the mane."
+Sports and Hobbies
+"A silhouette of a surfer riding a massive wave at sunset, with vivid gradients of orange, pink, and purple in the sky."
+"A skateboard deck with a bold flame design, surrounded by graffiti-style splashes and street art elements."
+"A soccer ball breaking through a goal net, with dynamic motion lines and vibrant colors."
+
+Other than t-shirts, what other products can these designs be marketed as being suited for?
+
+The designs you create can be marketed across a wide range of products beyond T-shirts. Here are some excellent options for applying these designs:
+Apparel and Accessories
+Hoodies – Bold, intricate, or abstract designs work well on hooded sweatshirts.
+Tank Tops – Perfect for seasonal or sports-oriented designs.
+Caps and Hats – Minimalist or typography-based designs fit great on caps.
+Leggings – Geometric patterns, nature-inspired, or abstract designs look stunning when wrapped around.
+Scarves and Bandanas – Great for intricate and artistic patterns.
+Socks – Fun, whimsical, or colorful designs are especially popular.
+Home and Living
+Posters and Wall Art – High-resolution designs can be marketed as art prints.
+Throw Pillows – Ideal for symmetrical, nature-inspired, or abstract patterns.
+Blankets – Large-scale designs with vibrant colors are eye-catching on blankets.
+Curtains – Geometric or natural designs can add flair to home decor.
+Rugs – Larger intricate designs or mandala-style artwork are perfect.
+Mugs – Compact, vibrant, and witty designs resonate well with coffee or tea lovers.
+Clocks – Abstract or retro designs make a statement on custom wall clocks.
+Stationery and Office Supplies
+Notebooks and Journals – Abstract, motivational, or minimalist designs work well as covers.
+Phone and Laptop Cases – Futuristic, artistic, or pop culture designs thrive here.
+Mouse Pads – Gamers and professionals love bold, personalized designs.
+Stickers and Decals – Compact designs with high detail and vibrant colors are ideal.
+Bags and Carrying Items
+Tote Bags – Versatile for both typography and artistic designs.
+Backpacks – Geometric and bold statement designs stand out.
+Fanny Packs – Bright, eye-catching designs suit the trendy vibe.
+Duffel Bags – Athletic-themed or sporty abstract designs are popular.
+Tech Accessories
+AirPods Cases – Compact, fun, and vibrant designs can add personality to tech.
+Tablet Covers – Great for detailed or futuristic artwork.
+Outdoor and Lifestyle
+Water Bottles – Ideal for motivational quotes, nature-inspired, or abstract designs.
+Camping Gear – Tents, coolers, or folding chairs with unique patterns stand out.
+Beach Towels – Large and vibrant summer-themed designs work perfectly.
+Kids and Pet Products
+Baby Onesies – Cute or whimsical designs appeal to parents.
+Pet Bandanas – Smaller, playful designs tailored for pet accessories.
+Pet Beds – Larger, symmetrical designs work well on beds for pets.
+Sports and Fitness Gear
+Yoga Mats – Mandalas, abstract, or motivational designs fit perfectly.
+Gym Bags – Bold, sporty, and geometric patterns stand out in this category.
+Waterproof Phone Holders – Compact, functional, and stylish designs for runners or swimmers.
+Event-Specific and Seasonal Items
+Greeting Cards – Artistic or typography designs suit birthday, holiday, or special events.
+Gift Wrapping Paper – Pattern-heavy or festive designs are ideal.
+Ornaments – Holiday-specific artwork can be applied to seasonal ornaments.
+Miscellaneous
+Face Masks – Minimalist or vibrant patterns are a great option for personal expression.
+Keychains – Fun, compact, and quirky designs fit well.
+Patches – Small embroidered versions of designs for jackets or bags.
