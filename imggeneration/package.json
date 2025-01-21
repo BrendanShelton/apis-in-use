@@ -9,7 +9,8 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@api/leonardoai": "file:.api/apis/leonardoai"
+    "@api/leonardoai": "file:.api/apis/leonardoai",
+    "dotenv": "^16.4.7"
   },
   "type": "module"
 }
