@@ -8,9 +8,28 @@ import prompts from './prompts.js';
 // const styles = ['111dc692-d470-4eec-b791-3475abac4c46', "Volvo", "BMW"]
 //const models = [6b645e3a-d64f-4341-a6d8-7a3690fbf042', ]
 import 'dotenv/config';
+import starryai from '@api/starryai';
 
+function starryGenerate() {
+  starryai.new_creation_creations__post({
+    prompt: 'string',
+    negativePrompt: 'string',
+    model: 'lyra',
+    aspectRatio: 'square',
+    highResolution: false,
+    images: 2,
+    seed: 0,
+    steps: 20,
+    initialImageUrl: 'string',
+    initialImageEncoded: 'string',
+    initialImageMode: 'color',
+    initialImageStrength: 0
+  })
+    .then(({ data }) => console.log(data))
+    .catch(err => console.error(err));
+}
 
-console.log(process.env.starryAPIkey)
+starryGenerate()
 
 
 function leonardoGenerate() {

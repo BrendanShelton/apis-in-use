@@ -10,7 +10,9 @@
   "description": "",
   "dependencies": {
     "@api/leonardoai": "file:.api/apis/leonardoai",
-    "dotenv": "^16.4.7"
+    "@api/starryai": "file:.api/apis/starryai",
+    "dotenv": "^16.4.7",
+    "oas": "^25.2.1"
   },
   "type": "module"
 }
