@@ -1,8 +1,8 @@
 import Oas from 'oas';
-// import APICore from 'api/dist/core';
-// import definition from './openapi.json';
-import APICore from 'api/dist/core/index.js';
-import definition from './openapi.json' with {type: 'json'};
+import APICore from 'api/dist/core';
+import definition from './openapi.json';
+// import APICore from 'api/dist/core/index.js';
+// import definition from './openapi.json' with {type: 'json'};
 class SDK {
     constructor() {
         this.spec = Oas.init(definition);
