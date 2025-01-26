@@ -1,30 +1,30 @@
-const colors = ['red', 'blue', 'green', 'neon'];
-const animals = ['wolf', 'lion', 'fox', 'tiger'];
+const colors = ['red', 'blue', 'green', 'yellow', 'sunset', 'neon', 'orange', 'pastel'];
+const animals = ['wolf', 'bear', 'lion', 'fox', 'tiger', 'elephant'];
 const celestialBodies = ['moon', 'star', 'planet', 'comet'];
-function varyWords(words){
-  const randomIndex = Math.floor(Math.random() * words.length);
-  const randomItem = words[randomIndex];
-  console.log(randomItem);
-  return randomItem
-}
+const aiImageStyles = ["Expressionist","Pencil Sketch",  "Photorealistic Tree",  "Caspar David Friedrich Style",
+  "Alphonse Mucha Style",  "Albrecht Dürer Style",  "Hokusai Style",  "Fauvism",  "Film Noir",  "Cinematic Lighting",
+  "Digital Art",  "Comic Book Style",  "Oil Painting",  "Watercolor",  "Unreal Engine 5",  "Octane Render"
+];
+
+
 
 const varyingPrompts = {
   NatureandAnimals: [
-    "A majestic wolf howling at a glowing, neon crescent moon in a starry sky, surrounded by aurora borealis effects, high contrast and detailed.",
-    "A vibrant tropical jungle scene with colorful parrots, lush greenery, and cascading waterfalls, designed in a bold, illustrative style.",
-    "An artistic mandala made from intricate floral and leaf patterns in a gradient of warm sunset colors.",
-    "A serene mountain landscape at sunrise, with golden light reflecting off a still lake and a flock of birds flying overhead, painted in a dreamy and vivid style.",
-    "A close-up of a vibrant monarch butterfly resting on a blooming flower, with intricate wing details and a blurred natural background.",
-    "A powerful lion standing on a rocky ledge, illuminated by golden sunlight with a savanna landscape in the background.",
-    "A playful pair of dolphins leaping from the ocean at sunset, surrounded by splashes of water and glowing warm hues.",
-    "A dense pine forest covered in snow, with rays of sunlight breaking through the trees and sparkling on the frost-covered branches.",
-    "A colorful hummingbird in mid-flight, sipping nectar from a bright red flower, with a soft blurred bokeh background.",
-    "A tranquil koi pond with orange and white fish swimming among lily pads and water ripples, painted in a peaceful style."
+    "A majestic {animal} howling at a glowing, {color} crescent moon in a starry sky, surrounded by aurora borealis effects, high contrast and detailed, {aiImageStyles}.",
+    "A vibrant tropical jungle scene with colorful parrots, lush greenery, and cascading waterfalls, designed in a bold, illustrative style, {aiImageStyles}.",
+    "An artistic mandala made from intricate floral and leaf patterns in a gradient of warm {color} colors, {aiImageStyles}.",
+    "A serene mountain landscape at sunrise, with golden light reflecting off a still lake and a flock of birds flying overhead, painted in a dreamy and vivid style, {aiImageStyles}.",
+    "A close-up of a vibrant {color} butterfly resting on a blooming flower, with intricate wing details and a blurred natural background, {aiImageStyles}.",
+    "A powerful {animal} standing on a rocky ledge, illuminated by golden sunlight with a savanna landscape in the background, {aiImageStyles}.",
+    "A playful pair of dolphins leaping from the ocean at sunset, surrounded by splashes of water and glowing warm hues, {aiImageStyles}.",
+    "A dense pine forest covered in snow, with rays of sunlight breaking through the trees and sparkling on the frost-covered branches, {aiImageStyles}.",
+    "A colorful hummingbird in mid-flight, sipping nectar from a bright {color} flower, with a soft blurred bokeh background, {aiImageStyles}.",
+    "A tranquil koi pond with {color} and white fish swimming among lily pads and water ripples, painted in a peaceful style, {aiImageStyles}."
   ],
   AbstractandGeometric: [
-    "An abstract geometric design with interlocking shapes and lines, vibrant neon colors on a black background, futuristic and symmetrical.",
+    "An abstract geometric design with interlocking shapes and lines, vibrant {color} colors on a black background, futuristic and symmetrical.",
     "A mesmerizing spiral galaxy with glowing fractal patterns, rendered in high detail and vivid hues of purple, blue, and gold.",
-    "A minimalist line art design featuring concentric circles and triangles in bold black, white, and red tones.",
+    "A minimalist line art design featuring concentric circles and triangles in bold black, white, and {color} tones.",
     "A colorful abstract swirl of liquid paint blending bold hues of blue, pink, yellow, and green, with a glossy, marbled effect.",
     "A dynamic design of overlapping 3D cubes and spheres, shaded with gradients of metallic silver, gold, and bronze, on a dark background.",
     "An optical illusion of twisting and shifting black and white stripes, creating a mesmerizing 3D effect.",
@@ -124,12 +124,13 @@ function getRandomPrompt(category, index) {
   return prompt
     .replace(/{color}/g, colors[Math.floor(Math.random() * colors.length)])
     .replace(/{animal}/g, animals[Math.floor(Math.random() * animals.length)])
-    .replace(/{celestialBody}/g, celestialBodies[Math.floor(Math.random() * celestialBodies.length)]);
+    .replace(/{celestialBody}/g, celestialBodies[Math.floor(Math.random() * celestialBodies.length)])
+    .replace(/{aiImageStyles}/g, aiImageStyles[Math.floor(Math.random() * aiImageStyles.length)]);
 }
-console.log(varyingPrompts.NatureandAnimals(0))
-console.log(varyingPrompts.NatureandAnimals[0])
-console.log(varyingPrompts.NatureandAnimals[0])
-console.log(varyingPrompts.NatureandAnimals[1])
+// console.log(varyingPrompts.NatureandAnimals[0])
+// console.log(varyingPrompts.NatureandAnimals[0])
+// console.log(varyingPrompts.NatureandAnimals[0])
+// console.log(varyingPrompts.NatureandAnimals[1])
 
 
 export default varyingPrompts

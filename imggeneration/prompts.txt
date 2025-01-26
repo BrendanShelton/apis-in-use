@@ -88,3 +88,33 @@ Miscellaneous
 Face Masks – Minimalist or vibrant patterns are a great option for personal expression.
 Keychains – Fun, compact, and quirky designs fit well.
 Patches – Small embroidered versions of designs for jackets or bags.
+
+
+const sAPIKey = process.env.starryAPIkey ;
+function starryGenerate() {
+  const url = 'https://api.starryai.com/creations/';
+  const options = {
+    method: 'POST',
+    headers: {accept: 'application/json', 'content-type': 'application/json', 'X-API-Key': 'YPZIivmd80BVAPI92loa4-5Ro2iZhg'},
+    body: JSON.stringify({
+      prompt: 'string',
+      negativePrompt: 'string',
+      model: 'lyra',
+      aspectRatio: 'square',
+      highResolution: false,
+      images: 4,
+      seed: 0,
+      steps: 20,
+      initialImageUrl: 'string',
+      initialImageEncoded: 'string',
+      initialImageMode: 'color',
+      initialImageStrength: 0
+    })
+  };
+  
+  fetch(url, options)
+    .then(res => res.json())
+    .then(json => console.log(json))
+    .catch(err => console.error(err));
+
+}
