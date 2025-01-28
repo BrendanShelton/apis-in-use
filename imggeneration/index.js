@@ -15,13 +15,15 @@ function randomSetting(setting){
 
 const colors = ['red', 'blue', 'green', 'yellow', 'sunset', 'neon', 'orange', 'pastel', 'black'];
 const colorsNoRed = ['blue', 'green', 'yellow', 'sunset', 'neon', 'orange', 'pastel', 'black'];
-const animals = ['wolf', 'bear', 'lion', 'fox', 'tiger', 'elephant'];
+const animals = ['wolf', 'bear', 'lion', 'fox', 'tiger', 'elephant', 'dinosaur'];
+const butterflies = ['monarch', 'blue morpho', 'swallowtail']
 const celestialBodies = ['moon', 'star', 'planet', 'comet'];
 const aiImageStyles = ["Expressionist","Pencil Sketch",  "Caspar David Friedrich Style",
   "Alphonse Mucha Style",  "Albrecht Dürer Style",  "Hokusai Style",  "Fauvism",  "Film Noir",  "Cinematic Lighting",
   "Digital Art",  "Comic Book Style",  "Oil Painting",  "Watercolor",  "Unreal Engine 5",  "Octane Render"
 ];
-const presetStyles = ['ANIME', 'CREATIVE', 'DYNAMIC', 'ENVIRONMENT', 'GENERAL', 'ILLUSTRATION', 'PHOTOGRAPHY', 'RAYTRACED', 'RENDER_3D', 'SKETCH_BW', 'SKETCH_COLOR',]
+const presetStyles = ['ANIME', 'CREATIVE', 'DYNAMIC', 'ENVIRONMENT', 'GENERAL', 'ILLUSTRATION', 'PHOTOGRAPHY', 
+  'RAYTRACED', 'RENDER_3D', 'SKETCH_BW', 'SKETCH_COLOR',]
 
 
 const prompts = {
@@ -30,7 +32,7 @@ const prompts = {
     "A vibrant tropical jungle scene with colorful parrots, lush greenery, and cascading waterfalls, designed in a bold, illustrative style, {aiImageStyles}.",
     "An artistic mandala made from intricate floral and leaf patterns in a gradient of warm {color} colors, {aiImageStyles}.",
     "A serene mountain landscape at sunrise, with golden light reflecting off a still lake and a flock of birds flying overhead, painted in a dreamy and vivid style, {aiImageStyles}.",
-    "A close-up of a vibrant {color} butterfly resting on a blooming flower, with intricate wing details and a blurred natural background, {aiImageStyles}.",
+    "A close-up of a vibrant {butterflies} butterfly resting on a blooming flower, with intricate wing details and a blurred natural background, {aiImageStyles}.",
     "A powerful {animal} standing on a rocky ledge, illuminated by golden sunlight with a savanna landscape in the background, {aiImageStyles}.",
     "A playful pair of dolphins leaping from the ocean at sunset, surrounded by splashes of water and glowing warm hues, {aiImageStyles}.",
     "A dense pine forest covered in snow, with rays of sunlight breaking through the trees and sparkling on the frost-covered branches, {aiImageStyles}.",
@@ -50,15 +52,15 @@ const prompts = {
     "A series of interlocking triangles forming a geometric mandala, with gradients of {color} colors fading into each other, {aiImageStyles}."
   ],
   PopCultureandFun: [
-    "A retro-style cassette tape with neon colors, vaporwave aesthetics, and a glowing grid background, inspired by 1980s design.",
+    "A retro-style cassette tape with {color} colors, vaporwave aesthetics, and a glowing grid background, inspired by 1980s design.",
     "A humorous cartoon-style alien holding a surfboard, standing on a beach under a double sunset, playful and colorful.",
     "A pixel-art style gaming controller surrounded by glowing 8-bit hearts, coins, and stars, perfect for gamers.",
     "A playful cartoon-style UFO beaming up a cow from a field, with bright colors and a humorous comic vibe.",
     "A vintage arcade cabinet surrounded by glowing coins and pixel-art explosions, rendered in a nostalgic 1980s neon aesthetic.",
-    "A cartoon superhero with a glowing cape and a city skyline in the background, bursting through a comic-style explosion.",
+    "A cartoon superhero with a {color} cape and a city skyline in the background, bursting through a comic-style explosion.",
     "A smiling anthropomorphic pizza slice holding a skateboard, rendered in a bold, graffiti-inspired style.",
     "A group of quirky cartoon-style robots dancing under a disco ball with colorful beams of light.",
-    "A funny scene of a dinosaur wearing sunglasses and holding a boombox, drawn in a retro 90s vibe.",
+    "A funny scene of a {animal} wearing sunglasses and holding a boombox, drawn in a retro 90s vibe.",
     "A stylized boom box with vibrant graffiti-style accents and musical notes emanating in a wave of color."
   ],
   FantasyandMythology: [
@@ -74,15 +76,15 @@ const prompts = {
     "A wizard casting a powerful spell, with swirling magical energy forming glowing patterns in the air."
   ],
   TypographyandQuotes: [
-    "Bold graffiti-style text spelling out 'Dream Big' with splashes of bright paint and a spray can in the corner, vibrant and dynamic.",
-    "A retro-inspired text design that says 'Stay Wild' with a vintage sunburst pattern and palm tree silhouettes in the background.",
-    "Hand-drawn cursive text 'Adventure Awaits' surrounded by whimsical doodles of mountains, trees, and a compass.",
-    "Bold retro-style text that says 'Chase the Horizon' with an orange and pink sunset gradient and silhouetted mountains in the background.",
-    "A grunge-style typographic design reading 'Rise Above' with distressed textures and fiery accents in red, black, and white.",
+    "Bold graffiti-style text spelling out 'Dream Big' with splashes of bright {color} paint and a spray can in the corner, vibrant and dynamic.",
+    "A retro-inspired {color} text design that says 'Stay Wild' with a vintage sunburst pattern and palm tree silhouettes in the background.",
+    "Hand-drawn cursive {color} text 'Adventure Awaits' surrounded by whimsical doodles of mountains, trees, and a compass.",
+    "Bold retro-style {color} text that says 'Chase the Horizon' with an orange and pink sunset gradient and silhouetted mountains in the background.",
+    "A grunge-style typographic design reading 'Rise Above' with distressed textures and fiery accents in {color}, {color}, and white.",
     "Minimalist typography reading 'Carpe Diem' with clean, elegant lines and a small sunrise icon above the text.",
-    "A playful, bubbly font spelling out 'Stay Groovy' with tie-dye swirls and peace sign accents.",
-    "Hand-drawn text 'Live Laugh Love' with flowing floral vines interwoven between the letters.",
-    "Blocky, futuristic text saying 'Level Up' with glowing neon effects and a digital glitch aesthetic.",
+    "A playful, bubbly font spelling out 'Stay Groovy' with {color} tie-dye swirls and peace sign accents.",
+    "Hand-drawn text 'Live Laugh Love' with flowing {color} floral vines interwoven between the letters.",
+    "Blocky, futuristic text saying 'Level Up' with glowing neon {color} effects and a digital glitch aesthetic.",
     "Bold, angular typography spelling out 'Fearless' with a shattered glass texture and dynamic motion lines."
   ],
   SciFiandTech: [
@@ -142,7 +144,8 @@ function getRandomPrompt(category, index) {
     .replace(/{colorsNoRed}/g, colors[Math.floor(Math.random() * colorsNoRed.length)])
     .replace(/{animal}/g, animals[Math.floor(Math.random() * animals.length)])
     .replace(/{celestialBody}/g, celestialBodies[Math.floor(Math.random() * celestialBodies.length)])
-    .replace(/{aiImageStyles}/g, aiImageStyles[Math.floor(Math.random() * aiImageStyles.length)]);
+    .replace(/{aiImageStyles}/g, aiImageStyles[Math.floor(Math.random() * aiImageStyles.length)])
+    .replace(/{butterflies}/g, butterflies[Math.floor(Math.random() * butterflies.length)])
 }
 
 
@@ -165,7 +168,7 @@ function leonardoGenerate() {
         width: randomSetting(sizes)[0],
         height: randomSetting(sizes)[1],
         //alchemy: true,
-        presetStyle: randomSetting(presetStyles),
+        //presetStyle: randomSetting(presetStyles),
         styleUUID: '111dc692-d470-4eec-b791-3475abac4c46',
         enhancePrompt: false,
         tiling: true
