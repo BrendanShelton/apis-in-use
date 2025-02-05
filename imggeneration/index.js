@@ -1,7 +1,5 @@
 import https from 'https'; // or 'https' for https:// URLs
 import fs from 'fs';
-//import prompts from './prompts.js';
-//import varyingPrompts from './varyingprompts.js';
 import 'dotenv/config';
 
 const sizes = [[512,512],[768,1024],[512,512],[768,1024],[1024,768]]
@@ -154,7 +152,7 @@ function getRandomPrompt(category, index) {
 const lAPIKey = process.env.leonardoAPIkey; // Replace with your actual API key.
 function leonardoGenerate() {
   const url = 'https://cloud.leonardo.ai/api/rest/v1/generations';
-  for (let j = 0; j < 1; j++){
+  for (let j = 0; j < 4; j++){
   //   for (let i = 0; i < 5; i++) {
       // setInterval(() => {
       //   console.log('delay')
@@ -162,7 +160,7 @@ function leonardoGenerate() {
       const requestData = {
         modelId: '1dd50843-d653-4516-a8e3-f0238ee453ff',
         contrast: 3.5,
-        prompt: getRandomPrompt('AbstractandGeometric', Math.floor(Math.random() * 6)),
+        prompt: getRandomPrompt('TypographyandQuotes', Math.floor(Math.random() * 10)),
         negative_prompt: 'photorealistic, 3d',
         num_images: 8,
         width: randomSetting(sizes)[0],
@@ -256,7 +254,27 @@ function downloadImg(imgs){
 
 
 }
-leonardoGenerate()
+//leonardoGenerate()
 // getimg('cbd04722-f71b-46d3-bb71-5be3dc595420')
 //console.log(getRandomPrompt('AbstractandGeometric', Math.floor(Math.random() * 10)))
- 
+
+// 3de1ddc8-4619-4c58-8223-89f91eeccbf2
+// 39761b81-722f-4358-9b36-4841b0ce5d73
+// 26a2a2d4-b9f6-471c-a6b2-e7e0a89c7123
+// 01e176c9-e04f-4f75-8bf5-070c87dc4166
+function deleteImg(genId) {
+  const url = `https://cloud.leonardo.ai/api/rest/v1/generations/${genId}`;
+  const options = {method: 'DELETE', headers: {accept: 'application/json'}};
+
+fetch(url, options)
+  .then(res => res.json())
+  .then(json => console.log(json))
+  .catch(err => console.error(err));
+}
+
+const ids = ['3de1ddc8-4619-4c58-8223-89f91eeccbf2', '39761b81-722f-4358-9b36-4841b0ce5d73', '26a2a2d4-b9f6-471c-a6b2-e7e0a89c7123','01e176c9-e04f-4f75-8bf5-070c87dc4166']
+
+// for (let j = 0; j < ids.length; j++) {
+//   deleteImg(ids[j])
+// }
+deleteImg('3de1ddc8-4619-4c58-8223-89f91eeccbf2')
